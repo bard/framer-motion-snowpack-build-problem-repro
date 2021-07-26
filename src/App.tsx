@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { motion } from 'framer-motion';
 
 interface AppProps {}
 
@@ -20,9 +21,9 @@ function App({}: AppProps) {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <p>
+        <motion.p animate={{ opacity: 1 }}>
           Page has been open for <code>{count}</code> seconds.
-        </p>
+        </motion.p>
         <p>
           <a
             className="App-link"
